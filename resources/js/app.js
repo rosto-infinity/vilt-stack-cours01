@@ -2,7 +2,7 @@ import './bootstrap';
 import '../css/app.css'
 
 import { createApp, h } from 'vue'
-import { createInertiaApp } from '@inertiajs/vue3'
+import { createInertiaApp, Head } from '@inertiajs/vue3'
 
 createInertiaApp({
     title: (title) => ` ${title} | Devinsto` ,
@@ -13,6 +13,7 @@ createInertiaApp({
   setup({ el, App, props, plugin }) {
     createApp({ render: () => h(App, props) })
       .use(plugin)
+      .component('Head', Head)
       .mount(el)
   },
   progress: {
