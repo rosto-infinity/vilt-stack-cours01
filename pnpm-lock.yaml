@@ -11,7 +11,13 @@ importers:
       '@inertiajs/vue3':
         specifier: ^2.0.2
         version: 2.0.2(vue@3.5.13)
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13
     devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.1(vite@6.0.7(jiti@1.21.7)(yaml@2.7.0))(vue@3.5.13)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.5.1)
@@ -21,8 +27,11 @@ importers:
       concurrently:
         specifier: ^9.0.1
         version: 9.1.2
+      esbuild:
+        specifier: ^0.24.2
+        version: 0.24.2
       laravel-vite-plugin:
-        specifier: ^1.0
+        specifier: ^1.1.1
         version: 1.1.1(vite@6.0.7(jiti@1.21.7)(yaml@2.7.0))
       postcss:
         specifier: ^8.4.47
@@ -31,7 +40,7 @@ importers:
         specifier: ^3.4.13
         version: 3.4.17
       vite:
-        specifier: ^6.0
+        specifier: ^6.0.7
         version: 6.0.7(jiti@1.21.7)(yaml@2.7.0)
 
 packages:
@@ -350,6 +359,13 @@ packages:
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
+
+  '@vitejs/plugin-vue@5.2.1':
+    resolution: {integrity: sha512-cxh314tzaWwOLqVes2gnnCtvBDcM1UMdn+iFR+UjAn411dPT3tOmqrJjbMd7koZpMAmBM/GqeV4n9ge7JSiJJQ==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      vite: ^5.0.0 || ^6.0.0
+      vue: ^3.2.25
 
   '@vue/compiler-core@3.5.13':
     resolution: {integrity: sha512-oOdAkwqUfW1WqpwSYJce06wvt6HljgY3fGeM9NcVA1HaYOij3mZG9Rkysn0OHuyUAGMbEbARIpsG+LPVlBJ5/Q==}
@@ -1260,6 +1276,11 @@ snapshots:
     optional: true
 
   '@types/estree@1.0.6': {}
+
+  '@vitejs/plugin-vue@5.2.1(vite@6.0.7(jiti@1.21.7)(yaml@2.7.0))(vue@3.5.13)':
+    dependencies:
+      vite: 6.0.7(jiti@1.21.7)(yaml@2.7.0)
+      vue: 3.5.13
 
   '@vue/compiler-core@3.5.13':
     dependencies:
