@@ -7,20 +7,20 @@
         <div class="w-2/4 mx-auto">
             <form @submit.prevent="submit">
                 <div class="mb-6">
-                    <label>Nom</label>
-                    <input type="text"  v-model="form.name"/>
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text"  v-model="form.name"/>
                 </div>
                 <div class="mb-6">
-                    <label>E-mail</label>
-                    <input type="text" v-model="form.email"/>
+                    <label for="e-mail">E-mail</label>
+                    <input id="e-mail" type="text" v-model="form.email"/>
                 </div>
                 <div class="mb-6">
-                    <label>Mot de passe</label>
-                    <input type="password" v-model="form.password"/>
+                    <label for="pass">Mot de passe</label>
+                    <input id="pass" type="password" v-model="form.password"/>
                 </div>
                 <div class="mb-6">
-                    <label>Confirmez le mot de passe</label>
-                    <input type="password" v-model="form.password_confirmation"/>
+                    <label for="conf-pass">Confirmez le mot de passe</label>
+                    <input id="conf-pass" type="password" v-model="form.password_confirmation"/>
                 </div>
 
                 <div>
