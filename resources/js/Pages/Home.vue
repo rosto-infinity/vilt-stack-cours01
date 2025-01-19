@@ -4,7 +4,6 @@
         <Head title="Home" />
         <h1 class="text-7xl text-green-500">Hello home</h1>
 
-        <Link href="/" class="mt-[600px] block" preserve-scroll>Home</Link>
     </Layout>
 </template>
 
