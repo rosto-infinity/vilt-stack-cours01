@@ -5,6 +5,7 @@ import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 
 createInertiaApp({
+    title: (title) => ` ${title} | Devinsto` ,
   resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
     return pages[`./Pages/${name}.vue`]
