@@ -11,4 +11,4 @@ Route::get('/', function () {
 //         'user' =>'Devinsto',
 //     ]);
 // });
-Route::inertia('/about',   "About", ['user' =>'Devinsto' ]);
+Route::inertia('/about',   "About", ['user' =>'Devinsto' ])->name('About');
