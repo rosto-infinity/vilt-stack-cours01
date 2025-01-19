@@ -9,6 +9,7 @@
                 <div class="mb-6">
                     <label for="nom">Nom</label>
                     <input id="nom" type="text"  v-model="form.name"/>
+                    <div v-if="form.errors.name">{{ form.errors.name }}</div>
                 </div>
                 <div class="mb-6">
                     <label for="e-mail">E-mail</label>
@@ -40,6 +41,7 @@
 import Layout from '../../Layouts/Layout.vue';
 import {reactive} from 'vue'
 import { router } from '@inertiajs/vue3'
+import { useForm } from '@inertiajs/vue3'
 
 const form = reactive({
     name:null,
