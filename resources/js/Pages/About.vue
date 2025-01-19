@@ -1,14 +1,19 @@
 <template>
-    <Layout>
+   <Head>
+    <title>About</title>
+    </Head>
     <h1>About page {{ user }}</h1>
-    </Layout>
+  
 </template>
 
 <script setup>
 import Layout from '../Layouts/Layout.vue';
+import {Head } from '@inertiajs/vue3'
+
 
 defineProps({
-    user: String
+    user: String,
 })
+    defineOptions({ layout:Layout})
 </script>
 
