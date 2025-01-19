@@ -48,7 +48,7 @@ const form = reactive({
 })
 
 const submit = ()=>{
-    console.log('submit');    
+    console.log(form);    
 }
 </script>
 
