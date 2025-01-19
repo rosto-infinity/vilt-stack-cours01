@@ -16,4 +16,4 @@ use Inertia\Inertia;
 Route::inertia('/',  'Home')->name('home');
 Route::inertia('/about',   "About", ['user' =>'Devinsto' ])->name('about');
 Route::inertia('/register', 'Auth/Register')->name( 'register');
-Route::post('/register',[AuthController::class] ,'register');
+Route::post('/register',[AuthController::class , 'register']);

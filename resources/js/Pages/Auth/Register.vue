@@ -50,7 +50,7 @@ const form = reactive({
 
 const submit = ()=>{
     // console.log(form);
-    router.post('/users', form)    
+    router.post('/register',form)    
 }
 </script>
 
