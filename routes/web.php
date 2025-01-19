@@ -7,5 +7,7 @@ Route::get('/', function () {
     return Inertia::render("Home");
 });
 Route::get('/about', function () {
-    return Inertia("About",[]);
+    return Inertia("About",[
+        'user' =>'Devinsto',
+    ]);
 });
