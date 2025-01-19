@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <Layout>
         <h1 class="text-7xl text-green-500">Hello home</h1>
-    </div>
+    </Layout>
 </template>
 
 <script setup>
-
+import Layout from '../Layouts/Layout.vue';
 </script>
 

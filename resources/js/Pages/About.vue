@@ -1,10 +1,12 @@
 <template>
-    <div>
+    <Layout>
     <h1>About page {{ user }}</h1>
-    </div>
+    </Layout>
 </template>
 
 <script setup>
+import Layout from '../Layouts/Layout.vue';
+
 defineProps({
     user: String
 })

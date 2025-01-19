@@ -1,5 +1,5 @@
 <script setup>
-
+import { Link } from '@inertiajs/vue3'
 
 </script>
 
@@ -8,8 +8,8 @@
         <header class="bg-green-600 text-white">
             <nav class="flex max-w-screen-lg items-center justify-between p-4">
             <div class="space-x-6">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
+                <Link href="/" prefetch>Home</Link>
+              <Link href="/about" prefetch>About</Link>
             </div>
             </nav>
         </header>
