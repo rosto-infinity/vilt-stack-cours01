@@ -39,6 +39,7 @@
 <script setup>
 import Layout from '../../Layouts/Layout.vue';
 import {reactive} from 'vue'
+import { router } from '@inertiajs/vue3'
 
 const form = reactive({
     name:null,
@@ -48,7 +49,8 @@ const form = reactive({
 })
 
 const submit = ()=>{
-    console.log(form);    
+    // console.log(form);
+    router.post('/users', form)    
 }
 </script>
 
