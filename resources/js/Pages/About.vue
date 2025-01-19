@@ -1,5 +1,5 @@
 <template>
-   <Head title="About" />
+   <Head :title="$page.component" />
    
     <h1>About page : {{ user}}</h1>
   
